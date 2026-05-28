@@ -17,7 +17,7 @@ body {
 .phone-frame {
     width: 100%;
     max-width: 390px;
-    min-height: 844px;
+    height: auto;
     border-radius: 2.5rem;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -191,6 +191,80 @@ main > a:active {
 .botao:active {
     transform: scale(0.97);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.cards-resumo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.card-resumo {
+    background-color: #ffffff;
+    border-top: 0.2rem solid #2ecc71;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-titulo {
+    font-size: 0.75rem;
+    color: #666666;
+    margin-bottom: 0.3rem;
+}
+
+.card-valor {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0a1f44;
+}
+
+#grafico-inicio {
+    display: block;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.atalhos {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.atalhos a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid #e0e0e0;
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+    color: #0a1f44;
+    font-size: 0.8rem;
+    font-weight: bold;
+    gap: 0.4rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.atalhos a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.atalhos a:hover {
+    background-color: #2ecc71;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.atalhos a:active {
+    transform: scale(0.97);
 }
 
 label {
