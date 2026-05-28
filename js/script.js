@@ -102,8 +102,19 @@ marcarAbaAtiva();
 
 var buscaEl = document.getElementById("busca");
 if (buscaEl) {
+    buscaEl.value = "";
     buscaEl.oninput = filtrarProdutos;
 }
+
+window.addEventListener("pageshow", function(e) {
+    if (e.persisted) {
+        var busca = document.getElementById("busca");
+        if (busca) {
+            busca.value = "";
+            filtrarProdutos();
+        }
+    }
+});
 
 var contadorEl = document.getElementById("contador-sessao");
 if (contadorEl) {
