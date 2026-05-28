@@ -1,3 +1,8 @@
+function tirarFoto() {
+    alert("Foto registrada com sucesso!");
+    window.location.href = "fluxo3_pasta.html";
+}
+
 function validar(event) {
     event.preventDefault();
 
