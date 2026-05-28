@@ -106,6 +106,12 @@ main li a {
     font-weight: bold;
 }
 
+main li a b {
+    margin-left: auto;
+    font-weight: normal;
+    color: #999999;
+}
+
 main li a img {
     width: 2rem;
     height: 2rem;
