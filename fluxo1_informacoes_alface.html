@@ -18,12 +18,15 @@
 
             <label for="validade">Validade</label>
             <input type="text" id="validade" name="validade" placeholder="DD/MM/AAAA">
+            <p class="msg-erro" id="erro-validade">Campo obrigatório.</p>
 
             <label for="custo">Custo (R$)</label>
             <input type="text" id="custo" name="custo" placeholder="0,00">
+            <p class="msg-erro" id="erro-custo">Campo obrigatório.</p>
 
             <label for="quantidade">Quantidade (kg)</label>
             <input type="text" id="quantidade" name="quantidade" placeholder="0,0">
+            <p class="msg-erro" id="erro-quantidade">Campo obrigatório.</p>
 
             <a href="fluxo1_confirmado.html" onclick="validar(event)">
                 Confirmar

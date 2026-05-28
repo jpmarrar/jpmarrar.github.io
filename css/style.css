@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e5e7eb;
@@ -19,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    animation: fadeIn 0.3s ease;
 }
 
 .status-bar {
@@ -206,6 +212,16 @@ input:focus {
     border-color: #2ecc71;
 }
 
+input.erro {
+    border-color: red;
+}
+
+.msg-erro {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+
 footer {
     background-color: #ffffff;
     display: flex;
@@ -240,4 +256,8 @@ footer a:hover {
 
 footer a:active {
     transform: scale(0.97);
+}
+
+footer a.ativo {
+    color: #2ecc71;
 }
