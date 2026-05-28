@@ -107,6 +107,24 @@ main > a:hover {
     color: #ffffff;
 }
 
+.botao {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #0a1f44;
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+}
+
+.botao:hover {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
 label {
     font-weight: bold;
     color: #0a1f44;
